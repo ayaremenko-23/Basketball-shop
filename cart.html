@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LogikaShop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cart.css">
+</head>
+
+
+<body>
+  <!-- Тіло: увесь вміст сторінки -->
+  <!-- Тіло: увесь вміст сторінки -->
+  <header class="container fixed">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img class='logo' src='data:image/png;base64,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' height="50px" alt='logo'></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class='nav-link' href='index.html#products'>Товари</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href='index.html#about'>Про нас</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href='#support' class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Підтримка</a>
+            </li>
+          </ul>
+          <form id="searchForm" class="d-flex mx-auto" role="search">
+            <input class="form-control me-2" type="search" placeholder="Пошук" aria-label="Search">
+            <button class="btn btn-outline-secondary btn-search" type="submit">Знайти</button>
+          </form>
+          <button class="cart-btn" id="cartBtn">
+            Кошик
+            <svg xmlns="http://www.w3.org/2000/svg" class="bell" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M17 17h-11v-14h-2" />
+              <path d="M6 5l14 1l-1 7h-13" />
+            </svg>
+            <span class="cart-counter">0</span>
+        </li>
+        </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="container cart-page">
+
+    <section class="cart py-4">
+      <h2>Ваш кошик</h2>
+      <div class="cart-items-list">
+        У кошику ще немає товарів
+      </div>
+      <div class="margin-y">
+        Сума замовлення: <span class="cart-total">0</span> грн.
+      </div>
+      <button  id="orderBtn" class="cart-btn margin-y">Оформити замовлення</button>
+    </section>
+    <section class="order">
+      <h2>Оформлення замовлення</h2>
+      <form class="order-form" action="" method="post">
+        <div class="form-group mt-3">
+          <label for="firstName">Ім'я:</label>
+          <input class="form-control" type="text" id="firstName" name="firstName" required>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="lastName">Прізвище:</label>
+          <input class="form-control" type="text" id="lastName" name="lastName" required>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="email">Електронна пошта:</label>
+          <input class="form-control" type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="phone">Номер телефону:</label>
+          <input class="form-control" type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="deliveryMethod">Спосіб доставки:</label>
+          <select class="form-select" id="deliveryMethod" name="deliveryMethod" required>
+            <option value="standard">Нова пошта</option>
+            <option value="express">Укрпошта</option>
+          </select>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="address">Адреса доставки:</label>
+          <input class="form-control" type="text" id="address" name="address"  required>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="comment">Коментар:</label>
+          <textarea class="form-control" id="comment" name="comment" rows="4"></textarea>
+        </div>
+        <button  type="submit" class="cart-btn margin-y">Підтвердити</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  </footer>
+
+  <!-- Модальне вікно (з'являється при натисканні на "Підтримка") -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-theme="light">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Виникли запитання?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-dark">Будь ласка, залиште номер телефону і ми зв'яжемося з Вами.</p>
+          <form action="" method="post">
+            <div class="mb-3">
+              <input type="text" class="form-control" name="" id="" aria-describedby="helpId"
+                placeholder="Номер телефону" />
+            </div>
+
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn cart-btn">Надіслати</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
+  <script src="js/script.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+
+</html>

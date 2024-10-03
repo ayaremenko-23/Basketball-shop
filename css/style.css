@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: #ffcc80;
+    color: #4a251e;
+    font-family: "Martian Mono", monospace;
+    margin: 0px;
+}
+
+body.light-theme {
+    background-color: #ffeb99;
+    color: #4a251e;
+}
+
+header {
+    background: #ffb347;
+}
+
+.btn-search {
+    border-radius: 30px;
+}
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    background: url('../img/hector-martinez-EG49vTtKdvI-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #ff5722;
+}
+
+.my-card {
+    padding: 28px;
+    background: #ffe0b2;
+    transition: background .2s linear;
+    border-radius: 10px;
+    max-width: 350px;
+}
+
+.my-card:hover {
+    background: #ffab91;
+    cursor: pointer;
+    transition: background .2s linear;
+    color: #4a251e;
+}
+
+.light-theme .my-card:hover {
+    background: #ffcc80;
+}
+
+.text-my-card {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #4a251e;
+}
+
+.description-card {
+    font-size: 0.7rem;
+    color: #4a251e;
+}
+
+.price-card {
+    font-size: 1rem;
+    line-height: 1rem;
+    color: #ff7043;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.my-card img {
+    width: 244px;
+    height: 214px;
+    object-fit: contain;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-cards {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: flex-start;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 72px;
+}
+
+footer {
+    margin-top: 50px;
+    background: #ffb74d;
+    padding: 50px 100px;
+}
+
+footer {
+    color: #6d4c41;
+}
+
+.attribution {
+    color: #4a251e;
+    font-size: 12px;
+}
+
+.attribution a {
+    color: #ff7043;
+}
+
+#themeToggle {
+    background: transparent;
+    color: #4a251e;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 40px;
+    transition: 0.4s transform linear;
+    margin: 10px;
+    border-color: transparent;
+}
+
+#themeToggle:hover {
+    transform: scale(1.1);
+    transition: 0.4s transform linear;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+#themeToggle:active {
+    transform: scale(0.9);
+    transition-duration: .2s;
+}
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ff7043;
+    max-width: 100%;
+    z-index: 100;
+}
+
+.cart-btn {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: linear-gradient(to left, #ff7043, #ff9800);
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    font-size: 0.9em;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition-duration: .2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-btn:hover {
+    background: linear-gradient(to left, #ff5722, #ff7043);
+}
+
+.cart-btn:active {
+    transform: scale(0.97);
+    transition-duration: .2s;
+}
+
+.cart-btn:hover .bell {
+    animation: bellRing 0.9s both;
+}
+
+.cart-counter {
+    background: #fff;
+    font-size: small;
+    color: #ff5722;
+    border-radius: 100px;
+    padding: 0 .2em;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+/* Cart styles */
+.cart-items-list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 20px;
+}
+
+.cart-item {
+    border: 1px solid #ff7043;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cart-page {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-total {
+    color: #ff5722;
+}
+
+.order {
+    width: 100%;
+    padding: 20px;
+    display: none;
+    opacity: 0;
+}
+
+@media (max-width: 720px) {
+    .cart-page {
+        flex-wrap: wrap;
+    }
+}
